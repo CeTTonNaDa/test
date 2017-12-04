@@ -1,0 +1,8 @@
+#!/usr/bin/expect -f
+spawn ./test.sh
+expect "WELCOME"
+send "Luci\r"
+expect "INTRODU"
+send "LUCI2\r"
+expect eof
+
